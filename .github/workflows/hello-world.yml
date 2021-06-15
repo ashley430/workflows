@@ -19,3 +19,12 @@ jobs:
     steps:  
       - name: ...World
         run: echo "World"
+        
+  list:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2      
+      - name: List things
+        run: ls -la
+       
+        
